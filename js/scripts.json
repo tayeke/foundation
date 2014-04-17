@@ -1,0 +1,9 @@
+{
+  "js/bin/all.min.js": [
+    "js/lib/foundation/*.js",
+    "js/lib/fastclick.js",
+    "js/lib/jquery.cookie.js",
+    "js/lib/placeholder.js",
+    "js/bin/custom.js"
+  ]
+}
