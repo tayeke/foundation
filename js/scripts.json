@@ -4,6 +4,6 @@
     "js/lib/fastclick.js",
     "js/lib/jquery.cookie.js",
     "js/lib/placeholder.js",
-    "js/bin/custom.js"
+    "js/bin/scripts.js"
   ]
 }
