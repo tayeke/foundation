@@ -4,8 +4,15 @@ module.exports = (grunt) ->
 
     # watch for changes in files
     watch:
-      files: ['Gruntfile.coffee', 'js/*', 'js/lib/**/*', 'css/*', 'css/lib/**/*']
-      tasks: 'onwatch'
+      scripts:
+        files: ['js/*', 'js/lib/**/*']
+        tasks: 'onscripts'
+      styles: 
+        files:  ['css/*', 'css/lib/**/*']
+        tasks: 'onstyles'
+      gruntfile:
+        files: ['Gruntfile.coffee']
+        tasks: 'onwatch'
 
     # compile coffee files
     # https://github.com/gruntjs/grunt-contrib-coffee
@@ -46,3 +53,5 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'default', ['watch']
   grunt.registerTask 'onwatch', ['coffee', 'sass', 'uglify']
+  grunt.registerTask 'onscripts', ['coffee', 'uglify']
+  grunt.registerTask 'onstyles', ['sass']
